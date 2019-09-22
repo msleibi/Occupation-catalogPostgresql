@@ -1,0 +1,264 @@
+#wrapper{
+    
+   
+    background-color: rgba(170, 173, 240, 0.37);
+    height: 90%;
+}
+
+
+.container {
+ 
+    margin-top:  10px;
+    margin-bottom: 200px;
+    background-color: #7598b5;
+    height: 100%;
+    border-color: #100f10;
+    border-style:solid;
+    height: 90%;
+}
+
+.container.general {
+    background-color: #2b3034;
+    height: 100%;
+    
+}
+
+.container.general h2 {
+    padding-top: 20px;
+    font-family: cursive;
+    color: #f6fd37;
+    font-size: 40px;
+        
+}
+
+.container.general h3 {
+    font-family: cursive;
+    font-size: 23px;
+    padding-left: 20px;
+        
+}
+
+.container.general h3:hover{
+    color: red;
+}
+
+.container.general a:hover{
+    color: white;
+}
+
+.latest_items h4{
+    color: #4db47d;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+
+.container.generalItems{
+    background-color: #2b3034;
+    height: 80%;
+    
+}
+
+.container.description{
+    max-height: 90%;
+    background-color: #aaaaaa;
+    
+}
+
+.container.description a{
+    color: #4cd8d8;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container.description a:hover{
+    color: brown;
+}
+
+.container.description h3{
+   padding-top: 15px;
+    color: white;
+    font-family: cursive;
+    font-size: 32px;
+    
+    
+}
+
+.container.description h4{
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: #f6fd37;
+    font-family: cursive;
+    font-size: 32px;
+    
+    height: 80%;
+    
+}
+
+.top-menu {
+    padding-top: 20px;
+	padding-bottom: 20px;
+    margin-top: 20px;
+   
+    background-color: black;
+}
+
+.top-menu a {
+    
+	margin: 10px;
+	line-height: 16px;
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+
+
+.banner.main {
+	height: 100px;
+	background: url("https://www.sparklebox.co.uk/topic/world-around-us/society/wpimages/wp24ff4f43_05_06.jpg");
+    background-position: right;
+	background-repeat:no-repeat;
+    background-size:contain;
+	background-size: 500px;
+	background-color:#1f1b8e;
+        
+	}
+
+.banner.menu {
+	height:100px;
+    background: url("https://www.sparklebox.co.uk/topic/world-around-us/society/wpimages/wp24ff4f43_05_06.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+	background-color: #1862d8;
+    background-size: contain;
+    background-size: 500px;
+    
+    
+}
+
+.banner.profile {
+	height: 150px;
+	background-color: #A6E8EB;
+}
+.banner h1 {
+	margin: 10px;
+    padding-left:  5px;
+}
+
+h1{
+    font-family:cursive;
+	font-size: 52px;
+    color: aliceblue;
+}
+
+
+h2 {
+	font-family:cursive;
+    font-size: 28px;
+	color: white;
+	line-height: 29px;
+    
+}
+
+h3 {
+    font-family:cursive;
+	font-size: 18px;
+	color: #f2f1f0;
+	line-height: 23px;
+}
+
+
+.btn {
+	padding: 10px;
+	margin: 0;
+	background-color: black;
+	border-width: 2px;
+	color: white;
+}
+.btn:hover {
+	border-color: #b80a39;
+    color: #18fcad;
+}
+.btn.delete {
+	border-color: #aaaaaa;
+	color: #aaaaaa;
+}
+.btn.delete:hover {
+	border-color: #aaaaaa;
+	color: red;
+}
+
+
+
+
+.menu-item {
+	background: #f2f1f0;
+    padding: 10px;
+    font-weight: 800;
+    font-family: cursive;
+    
+	
+}
+
+.menu-item h3 {
+    color: #2611c6;
+    font-weight:800;
+    font-family: cursive;
+}
+    
+.menu-price {
+	font-weight: 400;
+    color: #eb1952;
+}
+
+.menu-manufucture{
+    font-weight: 400;
+    color: #eb1952;
+}
+
+
+
+
+.flash {
+	background-color: #fbd598;
+	width:100%;
+	text-decoration: none;
+
+}
+
+.flash li {
+	list-style-type: none;
+	text-align: center;
+
+}
+
+
+.fbLogin{
+   margin-top:   10px;
+    padding-bottom: 80px;
+}
+
+.fbLogin h2{
+    padding-left: 100px;
+    padding-top: 20px;
+    font-family: cursive;
+    color: white;
+   
+}
+
+.fbLogin.btn{
+   
+   height: 10px;
+   background-color: blue;
+}
+
+.username p{
+    color: yellow;
+    font-family: fantasy;
+    font-weight: 800;
+}
+
+

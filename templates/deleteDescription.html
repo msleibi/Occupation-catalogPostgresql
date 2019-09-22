@@ -1,0 +1,33 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="row banner menu">
+		<div class="col-md-12">
+			<h1> Delete {{itemDescToDelete.name}}</h1>
+		</div>
+	</div>
+<br/>
+
+<h2> Are you sure you want to delete {{itemDescToDelete.name}}? </h2>
+<br/>
+
+<div class="row">
+    <div class="col-md-1">
+<form action="#" method = 'post'>
+
+	<button type="submit" class="btn delete" id="submit" type="submit">
+	Delete</button>
+    </form>
+        </div>
+    
+    <div class="col-md-1">
+	<a href = "{{url_for('showItemDescription',category_id= itemDescToDeleteCat.id,item_id=itemDescToDelete.id)}}">
+		<button class="btn">
+		 Cancel</button>
+	</a>
+</div>
+
+</div>
+<br/>
+{% endblock %}

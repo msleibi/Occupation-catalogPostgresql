@@ -1,0 +1,52 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+	<div class="row divider green">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row banner menu">
+		<div class="col-md-12">
+			<h1>Edit Item {{item.name}} </h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 ">
+			<form action="#" method = "post">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type ="text" maxlength="100" class="form-control" name="name" value="{{item.name }}">
+
+					<label for="description">Description:</label>
+					<textarea class="form-control" maxlength="250" rows="3" name="description">{{item.description}}</textarea>
+
+					<label for="price">Price:</label>
+					<div class="form-group">
+						<input type ="text" maxlength="10" class="form-control" name="price" placeholder="price in $" value="{{item.price}}">
+					</div>
+                    
+                    <label for="manufacture">Manufacture:</label>
+					<div class="form-group">
+						<input type ="text"  class="form-control" name="manufacture" value="{{item.manufacture}}">
+					</div>
+					</div> 
+                </div>
+            </div>
+                    <div class="row">
+                        <div class="col-md-1">
+					<button type="submit" class="btn" id="submit" type="submit">
+					Save</button>
+					
+				</div>
+			</form>
+                    <div class="col-md-1">
+            <a href = "{{url_for('categoryItems',category_id=categ.id)}}">
+            <button class="btn">
+			Cancel</button>
+			</a>
+                        </div>
+                       
+		
+	</div>
+        
+<br/>
+{% endblock %}

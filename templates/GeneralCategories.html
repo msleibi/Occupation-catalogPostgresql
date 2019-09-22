@@ -1,0 +1,73 @@
+ {% extends "main.html" %}
+{% block content %}
+{%include "header.html" %}
+
+
+	
+ <div class="row banner main">
+    <div class="col-md-6">
+			<h1> Occupations Catalog </h1>
+	</div>
+ </div>
+
+<br />
+  
+  <div class = 'flash'>
+  
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+         {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>
+         {% endfor %}
+        </ul>
+      
+      {% endif %}
+    {% endwith %}
+
+  </div>
+
+
+
+<br/>
+
+<div class="container general ">
+     <div class="row general">
+         <div class="col-md-6 categories">
+             <h2> Categories </h2> 
+<br/>
+        
+		{% for categ in categories %}
+        <a href = "{{url_for('categoryItems',category_id=categ.id)}}">
+		<h3> {{categ.name}}</h3>
+        </a>
+		{% endfor %}
+             
+	    </div>
+         
+         
+         <div class="col-md-6 latest_items">
+            
+             <h2>Latest items </h2>
+             <br/> 
+             <div class="row">
+                          
+                 {% for last in lastItems %}
+                 <div class="col-md-5">
+                 <a href = "{{url_for('showItemDescription',category_id=last[0].id,item_id=last[1].id)}}">      <h3>{{last[1].name}} </h3>   </a>
+                   </div>
+                 
+          <div class="col-md-5">               
+                   <h4>({{last[0].name}}) </h4> 
+                   
+          </div>
+             
+                 {% endfor %}
+                  
+           </div>
+             
+     </div>
+	 </div>
+     </div>
+
+{% endblock %}
