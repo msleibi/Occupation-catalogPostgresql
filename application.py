@@ -508,4 +508,4 @@ if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.debug = True
     make_ssl_devcert('key', host='localhost')
-    app.run(host='0.0.0.0', port=8000, ssl_context=('key.crt', 'key.key'))
+    app.run(host='0.0.0.0', port=80, ssl_context=('key.crt', 'key.key'))
