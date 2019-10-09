@@ -1,6 +1,6 @@
 # Occupations catalog using PostgreSQL
 
-Occupations catalog provides a list of Occupations and every Occupation has its items as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.
+Occupations catalog provides a list of Occupations and every Occupation has its items as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items
 
 # Tech
 
